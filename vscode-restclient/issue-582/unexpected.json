@@ -1,0 +1,65 @@
+{
+  "namespace": "jwt-auth\/v1",
+  "routes": {
+    "\/jwt-auth\/v1": {
+      "namespace": "jwt-auth\/v1",
+      "methods": [
+        "GET"
+      ],
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "args": {
+            "namespace": {
+              "required": false,
+              "default": "jwt-auth\/v1"
+            },
+            "context": {
+              "required": false,
+              "default": "view"
+            }
+          }
+        }
+      ],
+      "_links": {
+        "self": [
+          {
+            "href": "http:\/\/blog.dawncreat.com\/wp-json\/jwt-auth\/v1"
+          }
+        ]
+      }
+    },
+    "\/jwt-auth\/v1\/token": {
+      "namespace": "jwt-auth\/v1",
+      "methods": [
+        "POST"
+      ],
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "args": []
+        }
+      ],
+      "_links": {
+        "self": [
+          {
+            "href": "http:\/\/blog.dawncreat.com\/wp-json\/jwt-auth\/v1\/token"
+          }
+        ]
+      }
+    },
+    "\/jwt-auth\/v1\/token\/validate": {
+    }
+  },
+  "_links": {
+    "up": [
+      {
+        "href": "http:\/\/blog.dawncreat.com\/wp-json\/"
+      }
+    ]
+  }
+}
