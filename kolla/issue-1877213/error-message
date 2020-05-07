@@ -1,0 +1,466 @@
+INFO:kolla.common.utils.mariadb:Transaction Summary
+INFO:kolla.common.utils.mariadb:================================================================================
+INFO:kolla.common.utils.mariadb:Install  66 Packages
+INFO:kolla.common.utils.mariadb:Total download size: 52 M
+INFO:kolla.common.utils.mariadb:Installed size: 237 M
+INFO:kolla.common.utils.mariadb:Downloading Packages:
+INFO:kolla.common.utils.mariadb:(1/66): boost-program-options-1.66.0-6.el8.x86_ 414 kB/s | 143 kB     00:00
+INFO:kolla.common.utils.mariadb:(2/66): galera-25.3.26-1.module_el8.1.0+217+4d8 1.8 MB/s | 1.6 MB     00:00
+INFO:kolla.common.utils.mariadb:(3/66): mariadb-common-10.3.17-1.module_el8.1.0 198 kB/s |  62 kB     00:00
+INFO:kolla.common.utils.mariadb:(4/66): mariadb-10.3.17-1.module_el8.1.0+257+48 3.9 MB/s | 6.1 MB     00:01
+INFO:kolla.common.utils.mariadb:(5/66): mariadb-connector-c-3.0.7-1.el8.x86_64. 394 kB/s | 148 kB     00:00
+INFO:kolla.common.utils.mariadb:(6/66): mariadb-connector-c-config-3.0.7-1.el8.  37 kB/s |  13 kB     00:00
+INFO:kolla.common.utils.mariadb:(7/66): mariadb-errmsg-10.3.17-1.module_el8.1.0 419 kB/s | 232 kB     00:00
+INFO:kolla.common.utils.mariadb:(8/66): mariadb-server-galera-10.3.17-1.module_ 195 kB/s |  59 kB     00:00
+INFO:kolla.common.utils.mariadb:(9/66): mariadb-backup-10.3.17-1.module_el8.1.0 2.3 MB/s | 6.0 MB     00:02
+INFO:kolla.common.utils.mariadb:(10/66): nmap-ncat-7.70-5.el8.x86_64.rpm        545 kB/s | 237 kB     00:00
+INFO:kolla.common.utils.mariadb:(11/66): mariadb-server-utils-10.3.17-1.module_ 1.5 MB/s | 1.6 MB     00:01
+INFO:kolla.common.utils.mariadb:(12/66): perl-DBD-MySQL-4.046-3.module_el8.1.0+ 339 kB/s | 156 kB     00:00
+INFO:kolla.common.utils.mariadb:(13/66): mariadb-server-10.3.17-1.module_el8.1. 6.4 MB/s |  16 MB     00:02
+INFO:kolla.common.utils.mariadb:(14/66): checkpolicy-2.9-1.el8.x86_64.rpm       550 kB/s | 348 kB     00:00
+INFO:kolla.common.utils.mariadb:(15/66): perl-DBI-1.641-3.module_el8.1.0+199+8f 782 kB/s | 740 kB     00:00
+INFO:kolla.common.utils.mariadb:(16/66): diffutils-3.6-5.el8.x86_64.rpm         667 kB/s | 359 kB     00:00
+INFO:kolla.common.utils.mariadb:(17/66): expect-5.45.4-5.el8.x86_64.rpm         551 kB/s | 267 kB     00:00
+INFO:kolla.common.utils.mariadb:(18/66): libselinux-utils-2.9-2.1.el8.x86_64.rp 559 kB/s | 243 kB     00:00
+INFO:kolla.common.utils.mariadb:(19/66): lsof-4.91-2.el8.x86_64.rpm             577 kB/s | 253 kB     00:00
+INFO:kolla.common.utils.mariadb:(20/66): groff-base-1.22.3-18.el8.x86_64.rpm    1.0 MB/s | 1.0 MB     00:00
+INFO:kolla.common.utils.mariadb:(21/66): perl-Carp-1.42-396.el8.noarch.rpm      152 kB/s |  30 kB     00:00
+INFO:kolla.common.utils.mariadb:(22/66): perl-Data-Dumper-2.167-399.el8.x86_64. 240 kB/s |  58 kB     00:00
+INFO:kolla.common.utils.mariadb:(23/66): perl-Exporter-5.72-396.el8.noarch.rpm  163 kB/s |  34 kB     00:00
+INFO:kolla.common.utils.mariadb:(24/66): perl-Errno-1.28-416.el8.x86_64.rpm     252 kB/s |  76 kB     00:00
+INFO:kolla.common.utils.mariadb:(25/66): perl-File-Path-2.15-2.el8.noarch.rpm   141 kB/s |  38 kB     00:00
+INFO:kolla.common.utils.mariadb:(26/66): perl-File-Temp-0.230.600-1.el8.noarch. 241 kB/s |  63 kB     00:00
+INFO:kolla.common.utils.mariadb:(27/66): perl-Getopt-Long-2.50-4.el8.noarch.rpm 233 kB/s |  63 kB     00:00
+INFO:kolla.common.utils.mariadb:(28/66): perl-HTTP-Tiny-0.074-1.el8.noarch.rpm  223 kB/s |  58 kB     00:00
+INFO:kolla.common.utils.mariadb:(29/66): perl-MIME-Base64-3.15-396.el8.x86_64.r 159 kB/s |  31 kB     00:00
+INFO:kolla.common.utils.mariadb:(30/66): perl-Encode-2.97-3.el8.x86_64.rpm      1.2 MB/s | 1.5 MB     00:01
+INFO:kolla.common.utils.mariadb:(31/66): perl-IO-1.38-416.el8.x86_64.rpm        375 kB/s | 141 kB     00:00
+INFO:kolla.common.utils.mariadb:(32/66): perl-Math-Complex-1.59-416.el8.noarch. 317 kB/s | 108 kB     00:00
+INFO:kolla.common.utils.mariadb:(33/66): perl-Math-BigInt-1.9998.11-7.el8.noarc 459 kB/s | 196 kB     00:00
+INFO:kolla.common.utils.mariadb:(34/66): perl-PathTools-3.74-1.el8.x86_64.rpm   309 kB/s |  90 kB     00:00
+INFO:kolla.common.utils.mariadb:(35/66): perl-Pod-Escapes-1.07-395.el8.noarch.r 103 kB/s |  20 kB     00:00
+INFO:kolla.common.utils.mariadb:(36/66): perl-Pod-Perldoc-3.28-396.el8.noarch.r 298 kB/s |  86 kB     00:00
+INFO:kolla.common.utils.mariadb:(37/66): perl-Pod-Usage-1.69-395.el8.noarch.rpm 142 kB/s |  34 kB     00:00
+INFO:kolla.common.utils.mariadb:(38/66): perl-Pod-Simple-3.35-395.el8.noarch.rp 475 kB/s | 213 kB     00:00
+INFO:kolla.common.utils.mariadb:(39/66): perl-Scalar-List-Utils-1.49-2.el8.x86_ 235 kB/s |  68 kB     00:00
+INFO:kolla.common.utils.mariadb:(40/66): perl-Socket-2.027-3.el8.x86_64.rpm     243 kB/s |  59 kB     00:00
+INFO:kolla.common.utils.mariadb:(41/66): perl-Storable-3.11-3.el8.x86_64.rpm    325 kB/s |  98 kB     00:00
+INFO:kolla.common.utils.mariadb:(42/66): perl-Term-Cap-1.17-395.el8.noarch.rpm  116 kB/s |  23 kB     00:00
+INFO:kolla.common.utils.mariadb:(43/66): perl-Term-ANSIColor-4.06-396.el8.noarc 171 kB/s |  46 kB     00:00
+INFO:kolla.common.utils.mariadb:(44/66): perl-Text-ParseWords-3.30-395.el8.noar  86 kB/s |  18 kB     00:00
+INFO:kolla.common.utils.mariadb:(45/66): perl-Text-Tabs+Wrap-2013.0523-395.el8. 126 kB/s |  24 kB     00:00
+INFO:kolla.common.utils.mariadb:(46/66): perl-Time-Local-1.280-1.el8.noarch.rpm 174 kB/s |  34 kB     00:00
+INFO:kolla.common.utils.mariadb:(47/66): perl-constant-1.33-396.el8.noarch.rpm  130 kB/s |  25 kB     00:00
+INFO:kolla.common.utils.mariadb:(48/66): perl-Unicode-Normalize-1.25-396.el8.x8 244 kB/s |  82 kB     00:00
+INFO:kolla.common.utils.mariadb:(49/66): perl-macros-5.26.3-416.el8.x86_64.rpm  231 kB/s |  72 kB     00:00
+INFO:kolla.common.utils.mariadb:(50/66): perl-parent-0.237-1.el8.noarch.rpm      97 kB/s |  20 kB     00:00
+INFO:kolla.common.utils.mariadb:(51/66): perl-podlators-4.11-1.el8.noarch.rpm   349 kB/s | 118 kB     00:00
+INFO:kolla.common.utils.mariadb:(52/66): perl-threads-2.21-2.el8.x86_64.rpm     210 kB/s |  61 kB     00:00
+INFO:kolla.common.utils.mariadb:(53/66): perl-libs-5.26.3-416.el8.x86_64.rpm    1.2 MB/s | 1.6 MB     00:01
+INFO:kolla.common.utils.mariadb:(54/66): perl-threads-shared-1.58-2.el8.x86_64. 196 kB/s |  48 kB     00:00
+INFO:kolla.common.utils.mariadb:(55/66): policycoreutils-2.9-3.el8_1.1.x86_64.r 712 kB/s | 377 kB     00:00
+INFO:kolla.common.utils.mariadb:(56/66): policycoreutils-python-utils-2.9-3.el8 573 kB/s | 250 kB     00:00
+INFO:kolla.common.utils.mariadb:(57/66): psmisc-23.1-3.el8.x86_64.rpm           435 kB/s | 151 kB     00:00
+INFO:kolla.common.utils.mariadb:(58/66): perl-interpreter-5.26.3-416.el8.x86_64 2.6 MB/s | 6.3 MB     00:02
+INFO:kolla.common.utils.mariadb:(59/66): python3-audit-3.0-0.13.20190507gitf58e 289 kB/s |  85 kB     00:00
+INFO:kolla.common.utils.mariadb:(60/66): python3-libsemanage-2.9-1.el8.x86_64.r 367 kB/s | 127 kB     00:00
+INFO:kolla.common.utils.mariadb:(61/66): python3-libselinux-2.9-2.1.el8.x86_64. 638 kB/s | 283 kB     00:00
+INFO:kolla.common.utils.mariadb:(62/66): rsync-3.1.3-6.el8.x86_64.rpm           795 kB/s | 405 kB     00:00
+INFO:kolla.common.utils.mariadb:(63/66): python3-setools-4.2.2-1.el8.x86_64.rpm 1.0 MB/s | 600 kB     00:00
+INFO:kolla.common.utils.mariadb:(64/66): pv-1.6.6-7.el8.x86_64.rpm              228 kB/s |  64 kB     00:00
+INFO:kolla.common.utils.mariadb:(65/66): python3-policycoreutils-2.9-3.el8_1.1. 1.8 MB/s | 2.2 MB     00:01
+INFO:kolla.common.utils.mariadb:(66/66): tcl-8.6.8-2.el8.x86_64.rpm             1.6 MB/s | 1.1 MB     00:00
+INFO:kolla.common.utils.mariadb:--------------------------------------------------------------------------------
+INFO:kolla.common.utils.mariadb:Total                                           3.8 MB/s |  52 MB     00:13
+INFO:kolla.common.utils.mariadb:warning:
+INFO:kolla.common.utils.mariadb:/var/cache/dnf/epel-05da96c052a128d8/packages/pv-1.6.6-7.el8.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 2f86d6a1: NOKEY
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:Extra Packages for Enterprise Linux 8 - x86_64  1.6 MB/s | 1.6 kB     00:00
+INFO:kolla.common.utils.mariadb:Importing GPG key 0x2F86D6A1:
+INFO:kolla.common.utils.mariadb: Userid     : "Fedora EPEL (8) <epel@fedoraproject.org>"
+INFO:kolla.common.utils.mariadb: Fingerprint: 94E2 79EB 8D8F 25B2 1810 ADF1 21EA 45AB 2F86 D6A1
+INFO:kolla.common.utils.mariadb: From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:Key imported successfully
+INFO:kolla.common.utils.mariadb:Running transaction check
+INFO:kolla.common.utils.mariadb:Transaction check succeeded.
+INFO:kolla.common.utils.mariadb:Running transaction test
+INFO:kolla.common.utils.mariadb:Transaction test succeeded.
+INFO:kolla.common.utils.mariadb:Running transaction
+INFO:kolla.common.utils.mariadb:  Running scriptlet: mariadb-connector-c-3.0.7-1.el8.x86_64                 1/1
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Preparing        :                                                        1/1
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Exporter-5.72-396.el8.noarch                     1/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-libs-4:5.26.3-416.el8.x86_64                     2/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:error: db5 error(-30986) from dbcursor->c_put: BDB0075 DB_PAGE_NOTFOUND: Requested page not found
+INFO:kolla.common.utils.mariadb:error: error(-30986) adding header #227 record
+INFO:kolla.common.utils.mariadb:error: perl-Exporter-5.72-396.el8.noarch: install failed
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Carp-1.42-396.el8.noarch                         3/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Scalar-List-Utils-3:1.49-2.el8.x86_64            4/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-parent-1:0.237-1.el8.noarch                      5/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : python3-libselinux-2.9-2.1.el8.x86_64                 6/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-connector-c-config-3.0.7-1.el8.noarch         7/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-common-3:10.3.17-1.module_el8.1.0+257+4873    8/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-connector-c-3.0.7-1.el8.x86_64                9/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Text-ParseWords-3.30-395.el8.noarch             10/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : libselinux-utils-2.9-2.1.el8.x86_64                  11/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-errmsg-3:10.3.17-1.module_el8.1.0+257+4873   12/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : python3-libsemanage-2.9-1.el8.x86_64                 13/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : python3-setools-4.2.2-1.el8.x86_64                   14/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Term-ANSIColor-4.06-396.el8.noarch              15/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-macros-4:5.26.3-416.el8.x86_64                  16/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Errno-1.28-416.el8.x86_64                       17/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Socket-4:2.027-3.el8.x86_64                     18/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         19/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Unicode-Normalize-1.25-396.el8.x86_64           20/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-File-Path-2.15-2.el8.noarch                     21/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-IO-1.38-416.el8.x86_64                          22/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-PathTools-3.74-1.el8.x86_64                     23/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-constant-1.33-396.el8.noarch                    24/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-threads-1:2.21-2.el8.x86_64                     25/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-threads-shared-1.58-2.el8.x86_64                26/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-interpreter-4:5.26.3-416.el8.x86_64             27/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-File-Temp-0.230.600-1.el8.noarch                28/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Data-Dumper-2.167-399.el8.x86_64                29/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-MIME-Base64-3.15-396.el8.x86_64                 30/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Storable-1:3.11-3.el8.x86_64                    31/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Math-Complex-1.59-416.el8.noarch                32/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Math-BigInt-1:1.9998.11-7.el8.noarch            33/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Pod-Escapes-1:1.07-395.el8.noarch               34/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Term-Cap-1.17-395.el8.noarch                    35/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Time-Local-1:1.280-1.el8.noarch                 36/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-HTTP-Tiny-0.074-1.el8.noarch                    37/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : tcl-1:8.6.8-2.el8.x86_64                             38/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: tcl-1:8.6.8-2.el8.x86_64                             38/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : rsync-3.1.3-6.el8.x86_64                             39/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : python3-audit-3.0-0.13.20190507gitf58ec40.el8.x86_   40/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : psmisc-23.1-3.el8.x86_64                             41/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : lsof-4.91-2.el8.x86_64                               42/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : groff-base-1.22.3-18.el8.x86_64                      43/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Encode-4:2.97-3.el8.x86_64                      44/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Pod-Simple-1:3.35-395.el8.noarch                45/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Getopt-Long-1:2.50-4.el8.noarch                 46/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-podlators-4.11-1.el8.noarch                     47/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Pod-Perldoc-3.28-396.el8.noarch                 48/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-Pod-Usage-4:1.69-395.el8.noarch                 49/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-DBI-1.641-3.module_el8.1.0+199+8f0a6bbd.x86_6   50/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : perl-DBD-MySQL-4.046-3.module_el8.1.0+203+e45423dc   51/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-backup-3:10.3.17-1.module_el8.1.0+257+4873   52/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-server-utils-3:10.3.17-1.module_el8.1.0+25   53/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: mariadb-server-3:10.3.17-1.module_el8.1.0+257+4873   54/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-server-3:10.3.17-1.module_el8.1.0+257+4873   54/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: mariadb-server-3:10.3.17-1.module_el8.1.0+257+4873   54/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-3:10.3.17-1.module_el8.1.0+257+48736ea6.x8   55/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : diffutils-3.6-5.el8.x86_64                           56/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: diffutils-3.6-5.el8.x86_64                           56/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:install-info: No such file or directory for /usr/share/info/diffutils.info
+INFO:kolla.common.utils.mariadb:  Installing       : policycoreutils-2.9-3.el8_1.1.x86_64                 57/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: policycoreutils-2.9-3.el8_1.1.x86_64                 57/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : checkpolicy-2.9-1.el8.x86_64                         58/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : python3-policycoreutils-2.9-3.el8_1.1.noarch         59/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : policycoreutils-python-utils-2.9-3.el8_1.1.noarch    60/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : nmap-ncat-2:7.70-5.el8.x86_64                        61/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: nmap-ncat-2:7.70-5.el8.x86_64                        61/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : boost-program-options-1.66.0-6.el8.x86_64            62/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: boost-program-options-1.66.0-6.el8.x86_64            62/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : galera-25.3.26-1.module_el8.1.0+217+4d875839.x86_6   63/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: galera-25.3.26-1.module_el8.1.0+217+4d875839.x86_6   63/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : mariadb-server-galera-3:10.3.17-1.module_el8.1.0+2   64/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: mariadb-server-galera-3:10.3.17-1.module_el8.1.0+2   64/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : expect-5.45.4-5.el8.x86_64                           65/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Installing       : pv-1.6.6-7.el8.x86_64                                66/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Running scriptlet: pv-1.6.6-7.el8.x86_64                                66/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : boost-program-options-1.66.0-6.el8.x86_64             1/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : galera-25.3.26-1.module_el8.1.0+217+4d875839.x86_6    2/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-3:10.3.17-1.module_el8.1.0+257+48736ea6.x8    3/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-backup-3:10.3.17-1.module_el8.1.0+257+4873    4/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-common-3:10.3.17-1.module_el8.1.0+257+4873    5/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-connector-c-3.0.7-1.el8.x86_64                6/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-connector-c-config-3.0.7-1.el8.noarch         7/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-errmsg-3:10.3.17-1.module_el8.1.0+257+4873    8/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-server-3:10.3.17-1.module_el8.1.0+257+4873    9/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-server-galera-3:10.3.17-1.module_el8.1.0+2   10/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : mariadb-server-utils-3:10.3.17-1.module_el8.1.0+25   11/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : nmap-ncat-2:7.70-5.el8.x86_64                        12/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-DBD-MySQL-4.046-3.module_el8.1.0+203+e45423dc   13/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-DBI-1.641-3.module_el8.1.0+199+8f0a6bbd.x86_6   14/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : checkpolicy-2.9-1.el8.x86_64                         15/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : diffutils-3.6-5.el8.x86_64                           16/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : expect-5.45.4-5.el8.x86_64                           17/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : groff-base-1.22.3-18.el8.x86_64                      18/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : libselinux-utils-2.9-2.1.el8.x86_64                  19/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : lsof-4.91-2.el8.x86_64                               20/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Carp-1.42-396.el8.noarch                        21/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Data-Dumper-2.167-399.el8.x86_64                22/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Encode-4:2.97-3.el8.x86_64                      23/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Errno-1.28-416.el8.x86_64                       24/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Exporter-5.72-396.el8.noarch                    25/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-File-Path-2.15-2.el8.noarch                     26/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-File-Temp-0.230.600-1.el8.noarch                27/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Getopt-Long-1:2.50-4.el8.noarch                 28/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-HTTP-Tiny-0.074-1.el8.noarch                    29/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-IO-1.38-416.el8.x86_64                          30/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-MIME-Base64-3.15-396.el8.x86_64                 31/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Math-BigInt-1:1.9998.11-7.el8.noarch            32/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Math-Complex-1.59-416.el8.noarch                33/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-PathTools-3.74-1.el8.x86_64                     34/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Pod-Escapes-1:1.07-395.el8.noarch               35/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Pod-Perldoc-3.28-396.el8.noarch                 36/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Pod-Simple-1:3.35-395.el8.noarch                37/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Pod-Usage-4:1.69-395.el8.noarch                 38/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Scalar-List-Utils-3:1.49-2.el8.x86_64           39/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Socket-4:2.027-3.el8.x86_64                     40/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Storable-1:3.11-3.el8.x86_64                    41/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Term-ANSIColor-4.06-396.el8.noarch              42/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Term-Cap-1.17-395.el8.noarch                    43/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Text-ParseWords-3.30-395.el8.noarch             44/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         45/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Time-Local-1:1.280-1.el8.noarch                 46/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-Unicode-Normalize-1.25-396.el8.x86_64           47/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-constant-1.33-396.el8.noarch                    48/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-interpreter-4:5.26.3-416.el8.x86_64             49/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-libs-4:5.26.3-416.el8.x86_64                    50/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-macros-4:5.26.3-416.el8.x86_64                  51/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-parent-1:0.237-1.el8.noarch                     52/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-podlators-4.11-1.el8.noarch                     53/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-threads-1:2.21-2.el8.x86_64                     54/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : perl-threads-shared-1.58-2.el8.x86_64                55/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : policycoreutils-2.9-3.el8_1.1.x86_64                 56/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : policycoreutils-python-utils-2.9-3.el8_1.1.noarch    57/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : psmisc-23.1-3.el8.x86_64                             58/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : python3-audit-3.0-0.13.20190507gitf58ec40.el8.x86_   59/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : python3-libselinux-2.9-2.1.el8.x86_64                60/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : python3-libsemanage-2.9-1.el8.x86_64                 61/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : python3-policycoreutils-2.9-3.el8_1.1.noarch         62/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : python3-setools-4.2.2-1.el8.x86_64                   63/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : rsync-3.1.3-6.el8.x86_64                             64/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : tcl-1:8.6.8-2.el8.x86_64                             65/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:  Verifying        : pv-1.6.6-7.el8.x86_64                                66/66
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:Installed:
+INFO:kolla.common.utils.mariadb:  galera-25.3.26-1.module_el8.1.0+217+4d875839.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-backup-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-server-galera-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-server-utils-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  expect-5.45.4-5.el8.x86_64
+INFO:kolla.common.utils.mariadb:  rsync-3.1.3-6.el8.x86_64
+INFO:kolla.common.utils.mariadb:  pv-1.6.6-7.el8.x86_64
+INFO:kolla.common.utils.mariadb:  boost-program-options-1.66.0-6.el8.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-common-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-connector-c-3.0.7-1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-connector-c-config-3.0.7-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  mariadb-errmsg-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  mariadb-server-3:10.3.17-1.module_el8.1.0+257+48736ea6.x86_64
+INFO:kolla.common.utils.mariadb:  nmap-ncat-2:7.70-5.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-DBD-MySQL-4.046-3.module_el8.1.0+203+e45423dc.x86_64
+INFO:kolla.common.utils.mariadb:  perl-DBI-1.641-3.module_el8.1.0+199+8f0a6bbd.x86_64
+INFO:kolla.common.utils.mariadb:  checkpolicy-2.9-1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  diffutils-3.6-5.el8.x86_64
+INFO:kolla.common.utils.mariadb:  groff-base-1.22.3-18.el8.x86_64
+INFO:kolla.common.utils.mariadb:  libselinux-utils-2.9-2.1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  lsof-4.91-2.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Carp-1.42-396.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Data-Dumper-2.167-399.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Encode-4:2.97-3.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Errno-1.28-416.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-File-Path-2.15-2.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-File-Temp-0.230.600-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Getopt-Long-1:2.50-4.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-HTTP-Tiny-0.074-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-IO-1.38-416.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-MIME-Base64-3.15-396.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Math-BigInt-1:1.9998.11-7.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Math-Complex-1.59-416.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-PathTools-3.74-1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Pod-Escapes-1:1.07-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Pod-Perldoc-3.28-396.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Pod-Simple-1:3.35-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Pod-Usage-4:1.69-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Scalar-List-Utils-3:1.49-2.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Socket-4:2.027-3.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Storable-1:3.11-3.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-Term-ANSIColor-4.06-396.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Term-Cap-1.17-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Text-ParseWords-3.30-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Time-Local-1:1.280-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-Unicode-Normalize-1.25-396.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-constant-1.33-396.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-interpreter-4:5.26.3-416.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-libs-4:5.26.3-416.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-macros-4:5.26.3-416.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-parent-1:0.237-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-podlators-4.11-1.el8.noarch
+INFO:kolla.common.utils.mariadb:  perl-threads-1:2.21-2.el8.x86_64
+INFO:kolla.common.utils.mariadb:  perl-threads-shared-1.58-2.el8.x86_64
+INFO:kolla.common.utils.mariadb:  policycoreutils-2.9-3.el8_1.1.x86_64
+INFO:kolla.common.utils.mariadb:  policycoreutils-python-utils-2.9-3.el8_1.1.noarch
+INFO:kolla.common.utils.mariadb:  psmisc-23.1-3.el8.x86_64
+INFO:kolla.common.utils.mariadb:  python3-audit-3.0-0.13.20190507gitf58ec40.el8.x86_64
+INFO:kolla.common.utils.mariadb:  python3-libselinux-2.9-2.1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  python3-libsemanage-2.9-1.el8.x86_64
+
+INFO:kolla.common.utils.mariadb:  python3-policycoreutils-2.9-3.el8_1.1.noarch
+INFO:kolla.common.utils.mariadb:  python3-setools-4.2.2-1.el8.x86_64
+INFO:kolla.common.utils.mariadb:  tcl-1:8.6.8-2.el8.x86_64
+INFO:kolla.common.utils.mariadb:Failed:
+INFO:kolla.common.utils.mariadb:  perl-Exporter-5.72-396.el8.noarch
+INFO:kolla.common.utils.mariadb:Error: Transaction failed
+INFO:kolla.common.utils.mariadb:
+INFO:kolla.common.utils.mariadb:Removing intermediate container c2c0c55a4354
+ERROR:kolla.common.utils.mariadb:Error'd with the following message
+ERROR:kolla.common.utils.mariadb:The command '/bin/sh -c dnf -y install expect galera hostname mariadb mariadb-backup mariadb-server-galera mariadb-server-utils pv rsync tar     && dnf clean all && rm -rf /var/cache/dnf' returned a non-zero code: 1
+INFO:kolla.common.utils:=========================
+INFO:kolla.common.utils:Successfully built images
+INFO:kolla.common.utils:=========================
+INFO:kolla.common.utils:base
+INFO:kolla.common.utils:mariadb-base
+INFO:kolla.common.utils:mariadb-clustercheck
+INFO:kolla.common.utils:mariadb-server
+INFO:kolla.common.utils:===========================
+INFO:kolla.common.utils:Images that failed to build
+INFO:kolla.common.utils:===========================
+ERROR:kolla.common.utils:mariadb Failed with status: error
