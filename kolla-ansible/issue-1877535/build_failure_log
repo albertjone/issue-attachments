@@ -1,0 +1,97 @@
+TASK [mariadb : include_tasks] ****************************************************************************************************************************************************************
+included: /root/kolla-ansible/ansible/roles/mariadb/tasks/deploy.yml for 10.10.1.201, 10.10.1.202, 10.10.1.203
+
+TASK [mariadb : include_tasks] ****************************************************************************************************************************************************************
+included: /root/kolla-ansible/ansible/roles/mariadb/tasks/config.yml for 10.10.1.202, 10.10.1.201, 10.10.1.203
+
+TASK [mariadb : Ensuring config directories exist] ********************************************************************************************************************************************
+changed: [10.10.1.202] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.201] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.203] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+
+TASK [mariadb : Ensuring database backup config directory exists] *****************************************************************************************************************************
+skipping: [10.10.1.202]
+skipping: [10.10.1.203]
+changed: [10.10.1.201]
+
+TASK [mariadb : Copying over my.cnf for mariabackup] ******************************************************************************************************************************************
+skipping: [10.10.1.202]
+skipping: [10.10.1.203]
+changed: [10.10.1.201]
+
+TASK [mariadb : Copying over config.json files for services] **********************************************************************************************************************************
+changed: [10.10.1.201]
+changed: [10.10.1.202]
+changed: [10.10.1.203]
+
+TASK [mariadb : Copying over config.json files for mariabackup] *******************************************************************************************************************************
+skipping: [10.10.1.202]
+skipping: [10.10.1.203]
+changed: [10.10.1.201]
+
+TASK [mariadb : Copying over galera.cnf] ******************************************************************************************************************************************************
+changed: [10.10.1.201]
+changed: [10.10.1.202]
+changed: [10.10.1.203]
+
+TASK [mariadb : Copying over wsrep-notify.sh] *************************************************************************************************************************************************
+changed: [10.10.1.201] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.203] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.202] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+
+TASK [mariadb : include_tasks] ****************************************************************************************************************************************************************
+included: /root/kolla-ansible/ansible/roles/mariadb/tasks/check-containers.yml for 10.10.1.201, 10.10.1.202, 10.10.1.203
+
+TASK [mariadb : Check mariadb containers] *****************************************************************************************************************************************************
+changed: [10.10.1.201] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.203] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+changed: [10.10.1.202] => (item={'key': 'mariadb', 'value': {'container_name': 'mariadb', 'group': 'mariadb', 'enabled': True, 'image': '10.10.1.201:4000/kolla/centos-source-mariadb:fe6fd8dc5d', 'volumes': ['/etc/kolla/mariadb/:/var/lib/kolla/config_files/:ro', '/etc/localtime:/etc/localtime:ro', '', 'mariadb:/var/lib/mysql', 'kolla_logs:/var/log/kolla/'], 'dimensions': {}, 'haproxy': {'mariadb': {'enabled': True, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s', 'option mysql-check user haproxy post-41'], 'custom_member_list': ['server k-node1 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server k-node2 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server k-node3 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}, 'mariadb_external_lb': {'enabled': False, 'mode': 'tcp', 'port': '3306', 'listen_port': '3306', 'frontend_tcp_extra': ['option clitcpka', 'timeout client 3600s'], 'backend_tcp_extra': ['option srvtcpka', 'timeout server 3600s'], 'custom_member_list': ['server 10.10.1.201 10.10.1.201:3306 check inter 2000 rise 2 fall 5', 'server 10.10.1.202 10.10.1.202:3306 check inter 2000 rise 2 fall 5 backup', 'server 10.10.1.203 10.10.1.203:3306 check inter 2000 rise 2 fall 5 backup', '']}}}})
+
+TASK [mariadb : include_tasks] ****************************************************************************************************************************************************************
+included: /root/kolla-ansible/ansible/roles/mariadb/tasks/bootstrap.yml for 10.10.1.201, 10.10.1.202, 10.10.1.203
+
+TASK [mariadb : include_tasks] ****************************************************************************************************************************************************************
+included: /root/kolla-ansible/ansible/roles/mariadb/tasks/lookup_cluster.yml for 10.10.1.201, 10.10.1.202, 10.10.1.203
+
+TASK [mariadb : Create MariaDB volume] ********************************************************************************************************************************************************
+ok: [10.10.1.202]
+ok: [10.10.1.201]
+ok: [10.10.1.203]
+
+TASK [mariadb : Divide hosts by their MariaDB volume availability] ****************************************************************************************************************************
+ok: [10.10.1.201]
+ok: [10.10.1.202]
+ok: [10.10.1.203]
+
+TASK [mariadb : Establish whether the cluster has already existed] ****************************************************************************************************************************
+ok: [10.10.1.201]
+ok: [10.10.1.202]
+ok: [10.10.1.203]
+
+TASK [mariadb : Check MariaDB service port liveness] ******************************************************************************************************************************************
+fatal: [10.10.1.201]: FAILED! => {"changed": false, "elapsed": 10, "msg": "Timeout when waiting for search string MariaDB in 10.10.1.201:3306"}
+...ignoring
+fatal: [10.10.1.202]: FAILED! => {"changed": false, "elapsed": 10, "msg": "Timeout when waiting for search string MariaDB in 10.10.1.202:3306"}
+...ignoring
+fatal: [10.10.1.203]: FAILED! => {"changed": false, "elapsed": 10, "msg": "Timeout when waiting for search string MariaDB in 10.10.1.203:3306"}
+...ignoring
+
+TASK [mariadb : Divide hosts by their MariaDB service port liveness] **************************************************************************************************************************
+ok: [10.10.1.201]
+ok: [10.10.1.202]
+ok: [10.10.1.203]
+
+TASK [mariadb : Fail on existing but stopped cluster] *****************************************************************************************************************************************
+fatal: [10.10.1.201]: FAILED! => {"changed": false, "msg": "MariaDB cluster exists but is stopped. Please start it using kolla-ansible mariadb_recovery"}
+fatal: [10.10.1.202]: FAILED! => {"changed": false, "msg": "MariaDB cluster exists but is stopped. Please start it using kolla-ansible mariadb_recovery"}
+fatal: [10.10.1.203]: FAILED! => {"changed": false, "msg": "MariaDB cluster exists but is stopped. Please start it using kolla-ansible mariadb_recovery"}
+
+RUNNING HANDLER [mariadb : Restart MariaDB on existing cluster members] ***********************************************************************************************************************
+
+RUNNING HANDLER [mariadb : Start MariaDB on new nodes] ****************************************************************************************************************************************
+
+PLAY RECAP ************************************************************************************************************************************************************************************
+10.10.1.201                : ok=203  changed=128  unreachable=0    failed=1    skipped=134  rescued=0    ignored=1
+10.10.1.202                : ok=194  changed=126  unreachable=0    failed=1    skipped=136  rescued=0    ignored=1
+10.10.1.203                : ok=194  changed=126  unreachable=0    failed=1    skipped=136  rescued=0    ignored=1
+localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
