@@ -1,0 +1,3 @@
+kolla-ansible at commit `7d73246fe7229c7dd9bc79e9443eba00cf277785`
+kolla-image at `fe6fd8dc5d1809f8ce91f677f6affd4e21268551`
+config https://github.com/albertjone/kolla-config/blob/master/kolla-config/multinode/globals.yml
