@@ -1,0 +1,15 @@
+RUNNING HANDLER [mongodb : Copying the mongodb replication set bootstrap script] **************************************************************************************************************
+changed: [10.10.1.201 -> localhost]
+
+RUNNING HANDLER [mongodb : Bootstrapping the mongodb replication set] *************************************************************************************************************************
+fatal: [10.10.1.201 -> 10.10.1.201]: FAILED! => {"changed": true, "cmd": ["docker", "exec", "-t", "mongodb", "mongo", "--host", "10.10.1.201", "--port", "27017", "--quiet", "--eval", "printjson(rs.initiate(\n  {\n    \"_id\" : \"rs0\",\n    \"version\" : 1,\n    \"members\" : [\n            {\n        \"_id\" : 1,\n        \"host\" : \"10.10.1.201:27017\"\n      },            {\n        \"_id\" : 2,\n        \"host\" : \"10.10.1.202:27017\"\n      }          ]\n  }\n))"], "delta": "0:00:00.237794", "end": "2020-05-13 17:53:31.154664", "failed_when_result": true, "rc": 0, "start": "2020-05-13 17:53:30.916870", "stderr": "", "stderr_lines": [], "stdout": "{\r\n\t\"ok\" : 0,\r\n\t\"errmsg\" : \"couldn't initiate : need all members up to initiate, not ok : 10.10.1.202:27017\"\r\n}", "stdout_lines": ["{", "\t\"ok\" : 0,", "\t\"errmsg\" : \"couldn't initiate : need all members up to initiate, not ok : 10.10.1.202:27017\"", "}"]}
+
+RUNNING HANDLER [mongodb : Deleting the mongodb replication set bootstrap script] *************************************************************************************************************
+
+NO MORE HOSTS LEFT ****************************************************************************************************************************************************************************
+
+PLAY RECAP ************************************************************************************************************************************************************************************
+10.10.1.201                : ok=673  changed=40   unreachable=0    failed=1    skipped=313  rescued=0    ignored=0
+10.10.1.202                : ok=292  changed=11   unreachable=0    failed=1    skipped=183  rescued=0    ignored=0
+10.10.1.203                : ok=210  changed=11   unreachable=0    failed=1    skipped=167  rescued=0    ignored=0
+localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
