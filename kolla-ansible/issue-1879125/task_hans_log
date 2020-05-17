@@ -1,0 +1,32 @@
+TASK [ovs-dpdk : Install ovs-dpdkctl service and config] **************************************************************************************************************************************
+task path: /root/kolla-ansible/ansible/roles/ovs-dpdk/tasks/config.yml:32
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<10.10.1.201> (0, b'/root\n', b'')
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960 && echo ansible-tmp-1589695908.2426348-90480-266056254391960="` echo /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960 `" ) && sleep 0'"'"''
+<10.10.1.202> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.202> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/45ab045b1c 10.10.1.202 '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<10.10.1.201> (0, b'ansible-tmp-1589695908.2426348-90480-266056254391960=/root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960\n', b'')
+<10.10.1.202> (0, b'/root\n', b'')
+<10.10.1.202> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.202> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/45ab045b1c 10.10.1.202 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803 && echo ansible-tmp-1589695908.2657447-90481-114011750372803="` echo /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803 `" ) && sleep 0'"'"''
+<10.10.1.202> (0, b'ansible-tmp-1589695908.2657447-90481-114011750372803=/root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803\n', b'')
+Using module file /root/deploy/lib/python3.7/site-packages/ansible/modules/commands/command.py
+Using module file /root/deploy/lib/python3.7/site-packages/ansible/modules/commands/command.py
+<10.10.1.201> PUT /root/.ansible/tmp/ansible-local-81169at7cdxjw/tmpc2ejfq8f TO /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960/AnsiballZ_command.py
+<10.10.1.201> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d '[10.10.1.201]'
+<10.10.1.202> PUT /root/.ansible/tmp/ansible-local-81169at7cdxjw/tmpcole0si7 TO /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803/AnsiballZ_command.py
+<10.10.1.202> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/45ab045b1c '[10.10.1.202]'
+<10.10.1.201> (0, b'sftp> put /root/.ansible/tmp/ansible-local-81169at7cdxjw/tmpc2ejfq8f /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960/AnsiballZ_command.py\n', b'')
+<10.10.1.202> (0, b'sftp> put /root/.ansible/tmp/ansible-local-81169at7cdxjw/tmpcole0si7 /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803/AnsiballZ_command.py\n', b'')
+<10.10.1.202> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.202> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/45ab045b1c 10.10.1.202 '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803/ /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803/AnsiballZ_command.py && sleep 0'"'"''
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960/ /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960/AnsiballZ_command.py && sleep 0'"'"''
+<10.10.1.202> (0, b'', b'')
+<10.10.1.202> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.202> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/45ab045b1c -tt 10.10.1.202 '/bin/sh -c '"'"'CONFIG_FILE=/etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf bridge_mappings=physnet1:dpdk_bridge port_mappings='"'"'"'"'"'"'"'"' ens34:dpdk_bridge'"'"'"'"'"'"'"'"' cidr_mappings='"'"'"'"'"'"'"'"' dpdk_bridge:192.168.115.202/24 '"'"'"'"'"'"'"'"' ovs_mem_channels=4 ovs_socket_mem=1024 hugepage_mountpoint=/dev/hugepages ovs_physical_port_policy=named /usr/bin/python /root/.ansible/tmp/ansible-tmp-1589695908.2657447-90481-114011750372803/AnsiballZ_command.py && sleep 0'"'"''
+<10.10.1.201> (0, b'', b'')
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d -tt 10.10.1.201 '/bin/sh -c '"'"'CONFIG_FILE=/etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf bridge_mappings=physnet1:dpdk_bridge port_mappings='"'"'"'"'"'"'"'"' ens34:dpdk_bridge'"'"'"'"'"'"'"'"' cidr_mappings='"'"'"'"'"'"'"'"' dpdk_bridge:192.168.115.201/24 '"'"'"'"'"'"'"'"' ovs_mem_channels=4 ovs_socket_mem=1024 hugepage_mountpoint=/dev/hugepages ovs_physical_port_policy=named /usr/bin/python /root/.ansible/tmp/ansible-tmp-1589695908.2426348-90480-266056254391960/AnsiballZ_command.py && sleep 0'"'"''
