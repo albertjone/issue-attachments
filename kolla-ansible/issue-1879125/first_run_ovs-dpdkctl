@@ -1,0 +1,18 @@
++ eval 'install '
+++ install
+++ configure_kernel_modules
++++ get_value ovs dpdk_interface_driver
++++ crudini --get /etc/default/ovs-dpdk.conf ovs dpdk_interface_driver
+/etc/kolla/ovsdpdk-db/ovs-dpdkctl.sh: line 14: crudini: command not found
+++ driver=
+++ lsmod
+++ grep -ws
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+++ modprobe
+modprobe: ERROR: missing parameters. See -h.
++++ is_redhat_family
++++ [[ -e /etc/redhat-release ]]
++++ echo 1
+++ [[ 1 == 0 ]]
+++ grep -ws /etc/modules
