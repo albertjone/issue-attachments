@@ -1,0 +1,27 @@
+root@k-node2:~# CONFIG_FILE=/etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf bridge_mappings=physnet1:dpdk_bridge port_mappings=ens34:dpdk_bridge cidr_mappings=dpdk_bridge:192.168.115.202/24 ovs_mem_channels=4 ovs_socket_mem=1024 hugepage_mountpoint=/dev/hugepages ovs_physical_port_policy=named /etc/kolla/ovsdpdk-db/ovs-dpdkctl.sh install
+++ realpath /etc/kolla/ovsdpdk-db/ovs-dpdkctl.sh
++ FULL_PATH=/etc/kolla/ovsdpdk-db/ovs-dpdkctl.sh
++ CONFIG_FILE=/etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf
++ SERVICE_FILE=/etc/systemd/system/ovs-dpdkctl.service
++ BRIDGE_SERVICE_FILE=/etc/systemd/system/ovs-dpdk-bridge.service
++ '[' 1 -ge 1 ']'
++ func=install
++ shift
++ eval 'install '
+++ install
+++ configure_kernel_modules
++++ get_value ovs dpdk_interface_driver
++++ crudini --get /etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf ovs dpdk_interface_driver
+[Errno 2] No such file or directory: '/etc/kolla/ovsdpdk-db/ovs-dpdkctl.conf'
+++ driver=
+++ lsmod
+++ grep -ws
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+++ modprobe
+modprobe: ERROR: missing parameters. See -h.
++++ is_redhat_family
++++ [[ -e /etc/redhat-release ]]
++++ echo 1
+++ [[ 1 == 0 ]]
+++ grep -ws /etc/modules
