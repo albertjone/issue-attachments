@@ -1,0 +1,2 @@
+2020-05-21 12:49:47.391 381 ERROR oslo.messaging._drivers.impl_rabbit [req-0a338d12-e01c-40ba-9292-6a521b784dfa - - - - -] Connection failed: [Errno 111] Connection refused (retrying in 0 seconds): ConnectionRefusedError: [Errno 111] Connection refused
+2020-05-21 12:49:47.399 381 ERROR oslo.messaging._drivers.impl_rabbit [req-0a338d12-e01c-40ba-9292-6a521b784dfa - - - - -] Connection failed: [Errno 111] Connection refused (retrying in 28.0 seconds): ConnectionRefusedError: [Errno 111] Connection refused
