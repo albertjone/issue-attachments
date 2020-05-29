@@ -1,0 +1,70 @@
+TASK [murano : Checking if Murano core and applications library packages exist] ************************************************************************
+task path: /root/kolla-ansible/ansible/roles/murano/tasks/import_library_packages.yml:15
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<10.10.1.201> (0, b'/root\n', b'')
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076 && echo ansible-tmp-1590750656.4486256-118567-20557019663076="` echo /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076 `" ) && sleep 0'"'"''
+<10.10.1.201> (0, b'ansible-tmp-1590750656.4486256-118567-20557019663076=/root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076\n', b'')
+Using module file /root/deploy/lib/python3.7/site-packages/ansible/modules/commands/command.py
+<10.10.1.201> PUT /root/.ansible/tmp/ansible-local-27530g6xsc5hs/tmpnymfpn1d TO /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/AnsiballZ_command.py
+<10.10.1.201> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d '[10.10.1.201]'
+<10.10.1.201> (0, b'sftp> put /root/.ansible/tmp/ansible-local-27530g6xsc5hs/tmpnymfpn1d /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/AnsiballZ_command.py\n', b'')
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/ /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/AnsiballZ_command.py && sleep 0'"'"''
+<10.10.1.201> (0, b'', b'')
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d -tt 10.10.1.201 '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/AnsiballZ_command.py && sleep 0'"'"''
+<10.10.1.201> (1, b'\r\n{"changed": true, "end": "2020-05-29 19:10:57.727614", "stdout": "", "cmd": ["docker", "exec", "murano_api", "murano", "--os-username", "admin", "--os-password", "uxlNttg9tklN88M5FH7SaWNq6UXZ5sBOIsyHZnh0", "--os-project-name", "admin", "--os-auth-url", "https://10.10.1.205:35357", "--murano-url", "https://10.10.1.205:8082", "package-list"], "failed": true, "delta": "0:00:01.157246", "stderr": "b\'Unable to determine the Keystone version to authenticate with using the given auth_url. Identity service may not support API version discovery. Please provide a versioned auth_url instead. error=SSL exception connecting to https://10.10.1.205:35357: HTTPSConnectionPool(host=\\\\\'10.10.1.205\\\\\', port=35357): Max retries exceeded with url: / (Caused by SSLError(SSLError(\\"bad handshake: Error([(\\\\\'SSL routines\\\\\', \\\\\'tls_process_server_certificate\\\\\', \\\\\'certificate verify failed\\\\\')],)\\",),))\'", "rc": 1, "invocation": {"module_args": {"creates": null, "executable": null, "_uses_shell": false, "strip_empty_ends": true, "_raw_params": "docker exec murano_api murano --os-username admin --os-password uxlNttg9tklN88M5FH7SaWNq6UXZ5sBOIsyHZnh0 --os-project-name admin --os-auth-url https://10.10.1.205:35357 --murano-url https://10.10.1.205:8082 package-list\\n", "removes": null, "argv": null, "warn": true, "chdir": null, "stdin_add_newline": true, "stdin": null}}, "start": "2020-05-29 19:10:56.570368", "msg": "non-zero return code"}\r\n', b'Shared connection to 10.10.1.201 closed.\r\n')
+<10.10.1.201> Failed to connect to the host via ssh: Shared connection to 10.10.1.201 closed.
+<10.10.1.201> ESTABLISH SSH CONNECTION FOR USER: root
+<10.10.1.201> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d5eb36b79d 10.10.1.201 '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1590750656.4486256-118567-20557019663076/ > /dev/null 2>&1 && sleep 0'"'"''
+<10.10.1.201> (0, b'', b'')
+fatal: [10.10.1.201 -> 10.10.1.201]: FAILED! => {
+    "changed": false,
+    "cmd": [
+        "docker",
+        "exec",
+        "murano_api",
+        "murano",
+        "--os-username",
+        "admin",
+        "--os-password",
+        "uxlNttg9tklN88M5FH7SaWNq6UXZ5sBOIsyHZnh0",
+        "--os-project-name",
+        "admin",
+        "--os-auth-url",
+        "https://10.10.1.205:35357",
+        "--murano-url",
+        "https://10.10.1.205:8082",
+        "package-list"
+    ],
+    "delta": "0:00:01.157246",
+    "end": "2020-05-29 19:10:57.727614",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "docker exec murano_api murano --os-username admin --os-password uxlNttg9tklN88M5FH7SaWNq6UXZ5sBOIsyHZnh0 --os-project-name admin --os-auth-url https://10.10.1.205:35357 --murano-url https://10.10.1.205:8082 package-list\n",
+            "_uses_shell": false,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "msg": "non-zero return code",
+    "rc": 1,
+    "start": "2020-05-29 19:10:56.570368",
+    "stderr": "b'Unable to determine the Keystone version to authenticate with using the given auth_url. Identity service may not support API version discovery. Please provide a versioned auth_url instead. error=SSL exception connecting to https://10.10.1.205:35357: HTTPSConnectionPool(host=\\'10.10.1.205\\', port=35357): Max retries exceeded with url: / (Caused by SSLError(SSLError(\"bad handshake: Error([(\\'SSL routines\\', \\'tls_process_server_certificate\\', \\'certificate verify failed\\')],)\",),))'",
+    "stderr_lines": [
+        "b'Unable to determine the Keystone version to authenticate with using the given auth_url. Identity service may not support API version discovery. Please provide a versioned auth_url instead. error=SSL exception connecting to https://10.10.1.205:35357: HTTPSConnectionPool(host=\\'10.10.1.205\\', port=35357): Max retries exceeded with url: / (Caused by SSLError(SSLError(\"bad handshake: Error([(\\'SSL routines\\', \\'tls_process_server_certificate\\', \\'certificate verify failed\\')],)\",),))'"
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+NO MORE HOSTS LEFT ********************************************************************************************************************************
