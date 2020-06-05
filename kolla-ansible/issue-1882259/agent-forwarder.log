@@ -1,0 +1,191 @@
+2020-06-04 07:00:44 CST | ERROR | forwarder | tornado.application(ioloop.py:909) | Exception in callback <bound method Forwarder.flush of <monasca_agent.forwarder.daemon.Forwarder object at 0x7f4642bbda90>>
+Traceback (most recent call last):
+  File "/var/lib/kolla/venv/lib64/python3.6/site-packages/tornado/ioloop.py", line 907, in _run
+    return self.callback()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 168, in flush
+    self._post_metrics()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 159, in _post_metrics
+    self._endpoint.post_metrics(message_batch)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 136, in post_metrics
+    self._post(tenant_group[tenant], tenant)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 85, in _post
+    self._mon_client = self._get_mon_client()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 140, in _get_mon_client
+    endpoint = k.get_monasca_url()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 309, in get_monasca_url
+    catalog = self._init_client().auth_ref.service_catalog
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 276, in _init_client
+    ks = get_client(**self._config)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 191, in get_client
+    disc = discover.Discover(session=sess)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/discover.py", line 178, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 143, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 38, in get_version_data
+    resp = session.get(url, headers=headers, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1123, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 772, in request
+    auth_headers = self.get_auth_headers(auth)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1183, in get_auth_headers
+    return auth.get_headers(self, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/plugin.py", line 95, in get_headers
+    token = self.get_token(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 88, in get_token
+    return self.get_access(session).auth_token
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 134, in get_access
+    self.auth_ref = self.get_auth_ref(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 206, in get_auth_ref
+    self._plugin = self._do_create_plugin(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 138, in _do_create_plugin
+    authenticated=False)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 610, in get_discovery
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 1452, in get_discovery
+"/var/lib/docker/volumes/kolla_logs/_data/monasca/agent-forwarder.log" 4029234L, 322958739C                   1,1           Top
+ 2 weeks ago         Up 44 minutes                                              zookeeper
+2020-06-04 07:00:12 CST | INFO | forwarder | forwarder(daemon.py:173) | Forwarder RUN
+2020-06-04 07:00:12 CST | INFO | forwarder | forwarder(daemon.py:155) | Listening on port 17123
+2020-06-04 07:00:44 CST | ERROR | forwarder | tornado.application(ioloop.py:909) | Exception in callback <bound method Forwarder.flush of <monasca_agent.forwarder.daemon.Forwarder object at 0x7f4642bbda90>>
+Traceback (most recent call last):
+  File "/var/lib/kolla/venv/lib64/python3.6/site-packages/tornado/ioloop.py", line 907, in _run
+    return self.callback()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 168, in flush
+    self._post_metrics()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 159, in _post_metrics
+    self._endpoint.post_metrics(message_batch)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 136, in post_metrics
+    self._post(tenant_group[tenant], tenant)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 85, in _post
+    self._mon_client = self._get_mon_client()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 140, in _get_mon_client
+    endpoint = k.get_monasca_url()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 309, in get_monasca_url
+    catalog = self._init_client().auth_ref.service_catalog
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 276, in _init_client
+    ks = get_client(**self._config)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 191, in get_client
+    disc = discover.Discover(session=sess)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/discover.py", line 178, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 143, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 38, in get_version_data
+    resp = session.get(url, headers=headers, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1123, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 772, in request
+    auth_headers = self.get_auth_headers(auth)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1183, in get_auth_headers
+    return auth.get_headers(self, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/plugin.py", line 95, in get_headers
+    token = self.get_token(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 88, in get_token
+    return self.get_access(session).auth_token
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 134, in get_access
+    self.auth_ref = self.get_auth_ref(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 206, in get_auth_ref
+    self._plugin = self._do_create_plugin(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 138, in _do_create_plugin
+    authenticated=False)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 610, in get_discovery
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 1452, in get_discovery
+"/var/lib/docker/volumes/kolla_logs/_data/monasca/agent-forwarder.log" 4110224L, 329450399C                   1,1           Top
+1ab99f6967cc        10.10.1.201:4000/kolla/centos-source-keepalived:fe6fd8dc5d                          "dumb-init --single-…"  2020-06-04 07:00:12 CST | INFO | forwarder | forwarder(daemon.py:173) | Forwarder RUN
+2020-06-04 07:00:12 CST | INFO | forwarder | forwarder(daemon.py:155) | Listening on port 17123
+2020-06-04 07:00:44 CST | ERROR | forwarder | tornado.application(ioloop.py:909) | Exception in callback <bound method Forwarder.flush of <monasca_agent.forwarder.daemon.Forwarder object at 0x7f4642bbda90>>
+Traceback (most recent call last):
+  File "/var/lib/kolla/venv/lib64/python3.6/site-packages/tornado/ioloop.py", line 907, in _run
+    return self.callback()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 168, in flush
+    self._post_metrics()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/daemon.py", line 159, in _post_metrics
+    self._endpoint.post_metrics(message_batch)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 136, in post_metrics
+    self._post(tenant_group[tenant], tenant)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 85, in _post
+    self._mon_client = self._get_mon_client()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/forwarder/api/monasca_api.py", line 140, in _get_mon_client
+    endpoint = k.get_monasca_url()
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 309, in get_monasca_url
+    catalog = self._init_client().auth_ref.service_catalog
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 276, in _init_client
+    ks = get_client(**self._config)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 191, in get_client
+    disc = discover.Discover(session=sess)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/discover.py", line 178, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 143, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 38, in get_version_data
+    resp = session.get(url, headers=headers, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1123, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 772, in request
+    auth_headers = self.get_auth_headers(auth)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1183, in get_auth_headers
+    return auth.get_headers(self, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/plugin.py", line 95, in get_headers
+    token = self.get_token(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 88, in get_token
+    return self.get_access(session).auth_token
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 134, in get_access
+    self.auth_ref = self.get_auth_ref(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 206, in get_auth_ref
+    self._plugin = self._do_create_plugin(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 138, in _do_create_plugin
+    authenticated=False)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 610, in get_discovery
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 1452, in get_discovery
+"/var/lib/docker/volumes/kolla_logs/_data/monasca/agent-forwarder.log" 4111394L, 329544179C                   1,1           Top
+    ks = get_client(**self._config)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/monasca_agent/common/keystone.py", line 191, in get_client
+    disc = discover.Discover(session=sess)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/discover.py", line 178, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 143, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneclient/_discover.py", line 38, in get_version_data
+    resp = session.get(url, headers=headers, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1123, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 772, in request
+    auth_headers = self.get_auth_headers(auth)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1183, in get_auth_headers
+    return auth.get_headers(self, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/plugin.py", line 95, in get_headers
+    token = self.get_token(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 88, in get_token
+    return self.get_access(session).auth_token
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 134, in get_access
+    self.auth_ref = self.get_auth_ref(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 206, in get_auth_ref
+    self._plugin = self._do_create_plugin(session)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/generic/base.py", line 138, in _do_create_plugin
+    authenticated=False)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/identity/base.py", line 610, in get_discovery
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 1452, in get_discovery
+    disc = Discover(session, url, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 536, in __init__
+    authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/discover.py", line 102, in get_version_data
+    resp = session.get(url, headers=headers, authenticated=authenticated)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1123, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 913, in request
+    resp = send(**kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/keystoneauth1/session.py", line 1004, in _send_request
+    resp = self.session.request(method, url, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/requests/adapters.py", line 416, in send
+    self.cert_verify(conn, request.url, verify, cert)
+  File "/var/lib/kolla/venv/lib/python3.6/site-packages/requests/adapters.py", line 228, in cert_verify
+    "invalid path: {}".format(cert_loc))
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /var/lib/kolla/venv/lib/python' ~ distro_python_version ~ '/site-packages/certifi/cacert.pem
