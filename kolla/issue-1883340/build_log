@@ -1,0 +1,79 @@
+DEBUG:kolla.common.utils:Plugin mistral-base-plugin-tacker already registered in config
+DEBUG:kolla.common.utils:Plugin ceilometer-base-plugin-panko already registered in config
+DEBUG:kolla.common.utils:Image tempest matched regex
+DEBUG:kolla.common.utils:Skipping existing image openstack-base
+DEBUG:kolla.common.utils:Skipping existing image base
+DEBUG:kolla.common.utils:Set atime and mtime to 0 for all content in working dir
+INFO:kolla.common.utils:Added image tempest to queue
+INFO:kolla.common.utils:Attempt number: 1 to run task: BuildTask(tempest)
+DEBUG:kolla.common.utils.tempest:Processing
+INFO:kolla.common.utils.tempest:Building started at 2020-06-13 10:53:39.130205
+DEBUG:kolla.common.utils.tempest:Getting archive from https://tarballs.openstack.org/tempest/tempest-master.tar.gz
+ERROR:kolla.common.utils:Unhandled error when running BuildTask(tempest)
+Traceback (most recent call last):
+  File "/root/kolla/kolla/image/build.py", line 680, in run
+    task.run()
+  File "/root/kolla/kolla/image/build.py", line 409, in run
+    self.builder(self.image)
+  File "/root/kolla/kolla/image/build.py", line 580, in builder
+    plugins_am = make_an_archive(image.plugins, 'plugins')
+  File "/root/kolla/kolla/image/build.py", line 527, in make_an_archive
+    archive_path = self.process_source(image, item)
+  File "/root/kolla/kolla/image/build.py", line 433, in process_source
+    dest_archive = os.path.join(image.path, source['name'] + '-archive')
+KeyError: 'name'
+INFO:kolla.common.utils:Attempt number: 2 to run task: BuildTask(tempest)
+DEBUG:kolla.common.utils.tempest:Processing
+INFO:kolla.common.utils.tempest:Building started at 2020-06-13 10:53:42.869269
+DEBUG:kolla.common.utils.tempest:Getting archive from https://tarballs.openstack.org/tempest/tempest-master.tar.gz
+ERROR:kolla.common.utils:Unhandled error when running BuildTask(tempest)
+Traceback (most recent call last):
+  File "/root/kolla/kolla/image/build.py", line 680, in run
+    task.run()
+  File "/root/kolla/kolla/image/build.py", line 409, in run
+    self.builder(self.image)
+  File "/root/kolla/kolla/image/build.py", line 580, in builder
+    plugins_am = make_an_archive(image.plugins, 'plugins')
+  File "/root/kolla/kolla/image/build.py", line 527, in make_an_archive
+    archive_path = self.process_source(image, item)
+  File "/root/kolla/kolla/image/build.py", line 433, in process_source
+    dest_archive = os.path.join(image.path, source['name'] + '-archive')
+KeyError: 'name'
+INFO:kolla.common.utils:Attempt number: 3 to run task: BuildTask(tempest)
+DEBUG:kolla.common.utils.tempest:Processing
+INFO:kolla.common.utils.tempest:Building started at 2020-06-13 10:53:52.670650
+DEBUG:kolla.common.utils.tempest:Getting archive from https://tarballs.openstack.org/tempest/tempest-master.tar.gz
+ERROR:kolla.common.utils:Unhandled error when running BuildTask(tempest)
+Traceback (most recent call last):
+  File "/root/kolla/kolla/image/build.py", line 680, in run
+    task.run()
+  File "/root/kolla/kolla/image/build.py", line 409, in run
+    self.builder(self.image)
+  File "/root/kolla/kolla/image/build.py", line 580, in builder
+    plugins_am = make_an_archive(image.plugins, 'plugins')
+  File "/root/kolla/kolla/image/build.py", line 527, in make_an_archive
+    archive_path = self.process_source(image, item)
+  File "/root/kolla/kolla/image/build.py", line 433, in process_source
+    dest_archive = os.path.join(image.path, source['name'] + '-archive')
+KeyError: 'name'
+INFO:kolla.common.utils:Attempt number: 4 to run task: BuildTask(tempest)
+DEBUG:kolla.common.utils.tempest:Processing
+INFO:kolla.common.utils.tempest:Building started at 2020-06-13 10:54:00.362602
+DEBUG:kolla.common.utils.tempest:Getting archive from https://tarballs.openstack.org/tempest/tempest-master.tar.gz
+ERROR:kolla.common.utils:Unhandled error when running BuildTask(tempest)
+Traceback (most recent call last):
+  File "/root/kolla/kolla/image/build.py", line 680, in run
+    task.run()
+  File "/root/kolla/kolla/image/build.py", line 409, in run
+    self.builder(self.image)
+  File "/root/kolla/kolla/image/build.py", line 580, in builder
+    plugins_am = make_an_archive(image.plugins, 'plugins')
+  File "/root/kolla/kolla/image/build.py", line 527, in make_an_archive
+    archive_path = self.process_source(image, item)
+  File "/root/kolla/kolla/image/build.py", line 433, in process_source
+    dest_archive = os.path.join(image.path, source['name'] + '-archive')
+KeyError: 'name'
+INFO:kolla.common.utils:===========================
+INFO:kolla.common.utils:Images that failed to build
+INFO:kolla.common.utils:===========================
+ERROR:kolla.common.utils:tempest Failed with status: building
